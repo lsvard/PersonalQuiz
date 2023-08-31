@@ -33,7 +33,7 @@ extension ResultViewController {
         
         answers.forEach { animal in
             if let countAnimals = mostCommonType[animal] {
-                mostCommonType.updateValue(countAnimals, forKey: animal)
+                mostCommonType.updateValue(countAnimals + 1, forKey: animal)
             } else {
                 mostCommonType[animal] = 1
             }
