@@ -40,7 +40,7 @@ extension ResultViewController {
         }
         
         let result = mostCommonType.max { $0.1 < $1.1 }?.key
-        updateUI(with: result!)
+        updateUI(with: result ?? .dog)
     }
     
     private func updateUI(with animal: Animal) {
