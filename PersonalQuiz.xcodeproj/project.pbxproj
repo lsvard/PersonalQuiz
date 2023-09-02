@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A128F4C2AA3446C00D5B218 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0A81A2682A93E10E000E556F /* PersonalQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A81A26B2A93E10E000E556F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A81A26D2A93E10E000E556F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		0A81A25F2A93E10E000E556F = {
 			isa = PBXGroup;
 			children = (
+				0A128F4C2AA3446C00D5B218 /* README.md */,
 				0A81A26A2A93E10E000E556F /* PersonalQuiz */,
 				0A81A2692A93E10E000E556F /* Products */,
 			);
