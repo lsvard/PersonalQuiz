@@ -29,25 +29,30 @@ final class ResultViewController: UIViewController {
 extension ResultViewController {
     private func getResult() {
         let answers = answers.map { $0.animal }
-        var mostCommonType: [Animal: Int] = [:]
+        var selectedTypes: [Animal: Int] = [:]
+        
+//        answers.forEach { animal in
+//            if let counOfType = selectedTypes[animal] {
+//                selectedTypes.updateValue(counOfType + 1, forKey: animal)
+//            } else {
+//                selectedTypes[animal] = 1
+//            }
+//        }
         
         answers.forEach { animal in
-            if let countAnimals = mostCommonType[animal] {
-                mostCommonType.updateValue(countAnimals + 1, forKey: animal)
-            } else {
-                mostCommonType[animal] = 1
-            }
+            selectedTypes[animal, default: 0] += 1
         }
         
-        let result = mostCommonType.max { $0.1 < $1.1 }?.key
-        updateUI(with: result ?? .dog)
+        let mostFrequentType = selectedTypes.max { $0.1 < $1.1 }?.key
+        
+        дуе
+        
+        updateUI(with: mostFrequentType ?? .dog)
     }
     
     private func updateUI(with animal: Animal) {
-        animalLabel.text = "ВЫ - \(animal.rawValue)"
+        animalLabel.text = "Вы - \(animal.rawValue)"
         definationLabel.text = animal.definition
+        
     }
 }
-
-
-    
